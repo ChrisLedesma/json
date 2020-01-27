@@ -1,10 +1,10 @@
 <?php 
 include 'config.php';
-include 'class.stocks.php';
+include 'class.pets.php';
 header('Content-Type: application/json');
-$stocks = new Stocks();
-$list=$stocks->get_stocks();
-echo "{\"stocks\":";
+$pets = new Pets();
+$list=$pets->get_pets();
+echo "{\"pets\":";
 echo json_encode($list);
 echo "}";
 ?>
